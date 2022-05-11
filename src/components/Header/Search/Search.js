@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import SearchIcon from "../../assets/search-icon.png"
+import SearchIcon from "../../../assets/search-icon.png"
 import styles from "./Search.module.css"
 
 function Search() {

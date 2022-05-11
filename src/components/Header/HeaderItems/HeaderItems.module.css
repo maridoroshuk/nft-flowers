@@ -1,0 +1,9 @@
+.items {
+	display: flex;
+
+}
+
+.item {
+	margin: 0.5rem;
+	cursor: pointer;
+}

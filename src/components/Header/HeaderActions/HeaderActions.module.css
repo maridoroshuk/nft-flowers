@@ -1,0 +1,30 @@
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.action {
+	margin: 0.5rem;
+}
+.switch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1c1c1e;	
+	border-radius: 50%;
+	padding: 1rem;
+	object-fit: contain;
+}
+
+
+.icon {
+	height: 2rem;
+}
+
+.login {
+	background: linear-gradient(to right, #adfffc,  #f4ff91);
+	border: none;
+	border-radius: 2rem;
+	padding: 1rem  2rem;
+	font-size: 1.2rem;
+}
