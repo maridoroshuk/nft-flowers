@@ -1,0 +1,18 @@
+.header {
+	color: #fff;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section {
+	margin: 1rem;
+}
+
+.search {
+	flex: 1;
+}
+.logo {
+	width: 8rem;
+}
