@@ -1,0 +1,43 @@
+.collection {
+	color: #fff;
+	background-color: #1a1c1e;
+	border-radius: 2rem;
+	overflow: hidden;
+	width: 20rem;
+	margin: 3rem 2rem;
+}
+
+.details {
+	padding: 1.2rem;
+}
+
+.name {
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.id {
+	color: #a1a5b0;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.pic {
+	width: 100%;
+}
+
+.weth {
+	width: 1rem;;
+}
+
+.price_container {
+	display: flex;
+	align-items: center;
+	margin-top: 0.7rem;
+	object-fit: contain;
+}
+
+.price {
+	margin-left: 0.5rem;
+	font-weight: 600;
+}
