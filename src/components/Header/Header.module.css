@@ -1,6 +1,5 @@
 .header {
 	color: #fff;
-	height: 10vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -14,8 +13,11 @@
 }
 
 .logo {
-	width: 8rem;
+	min-width: 5rem;
+	max-width: 8rem;
 }
+
+
 
 .logo_image {
 	max-width: 100%;

@@ -4,7 +4,7 @@ import Weth from "../../../assets/weth.png"
 
 function Card({ id, name, traits, image }) {
 	return (
-		<div className={styles.collection}>
+		<div className={styles.card}>
 			<img src={image} className={styles.pic} alt="" />
 			<div className={styles.details}>
 				<div className={styles.name}>

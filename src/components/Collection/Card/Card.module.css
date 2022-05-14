@@ -1,10 +1,11 @@
-.collection {
+.card {
 	color: #fff;
 	background-color: #1a1c1e;
 	border-radius: 2rem;
 	overflow: hidden;
 	width: 20rem;
 	margin: 3rem 2rem;
+	cursor: pointer;
 }
 
 .details {
