@@ -8,8 +8,10 @@ function MainCard({ img, name, ownerImg }) {
 	return (
 		<div className={styles.main}>
 			<div className={styles.content}>
-				<div className={styles.container}>
-					<img src={img} className={styles.selectedFlower} alt="" />
+				<div className={styles.highlight}>
+					<div className={styles.container}>
+						<img src={img} className={styles.selectedFlower} alt="" />
+					</div>
 				</div>
 			</div>
 			<div className={styles.details}>
@@ -22,18 +24,18 @@ function MainCard({ img, name, ownerImg }) {
 				</div>
 				<div className={styles.owner__details}>
 					<div className={styles.owner__detailsAndHandle}>
-            <div>address</div>
-            <div className={styles.owner__handle}></div>
-          </div>
-          <div className={styles.owner__link}>
-              <img src={Instagram} alt="instagram link"/>
-          </div>
-          <div className={styles.owner__link}>
-              <img src={Twitter} alt="twitter link"/>
-          </div>
-          <div className={styles.owner__link}>
-              <img src={More} alt="more link"/>
-          </div>
+						<div>address</div>
+						<div className={styles.owner__handle}></div>
+					</div>
+					<div className={styles.owner__link}>
+						<img src={Instagram} alt="instagram link" />
+					</div>
+					<div className={styles.owner__link}>
+						<img src={Twitter} alt="twitter link" />
+					</div>
+					<div className={styles.owner__link}>
+						<img src={More} alt="more link" />
+					</div>
 				</div>
 			</div>
 		</div>

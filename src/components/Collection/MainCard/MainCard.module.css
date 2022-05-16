@@ -1,3 +1,28 @@
 .content {
-	
+	display: flex;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #fff;
+}
+
+
+.highlight {
+	flex: 0.25;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	margin-right: 1rem;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0.75;
+
 }

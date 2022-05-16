@@ -3,19 +3,27 @@
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	overflow: scroll;
+	overflow-x: scroll;
 	margin: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #808080;
 }
 
 .flowers::-webkit-scrollbar {
-	display: none;
+	width: 20px;
+}
+
+.flowers::-webkit-scrollbar-track {
+	border: none;
+}
+
+.flowers::-webkit-scrollbar-thumb {
+	background: #1a1c1e;
+	border-radius: 10px;
 }
 
 @media (min-width: 40rem) {
 	.flowers {
 		flex-direction: row;
 	}
-  }
+}

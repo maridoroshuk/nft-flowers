@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Card from "./Card/Card"
 import axios from "axios"
 import styles from "./Collection.module.css"
+import MainCard from "./MainCard/MainCard"
 
 const TEST_DATA = [
 	{
@@ -47,7 +48,7 @@ function Collection() {
 	useEffect(() => {
 		const getNFT = async () => {
 			const data = await axios.get(
-				"https://testnets-api.opensea.io/assets?asset_contract_address=0xE73feAA2d9DDa988c7A5A84940be29406d887b86&order_direction=asc"
+				"https://testnets-api.opensea.io/assets?asset_contract_address=0x7084ce19e2771649e1384B2dc0d4E68bD69781b5&order_direction=asc"
 			)
 			console.log(data.data)
 			setFlowersData(data.data.assets)
@@ -58,16 +59,23 @@ function Collection() {
 	console.log(flowersData)
 
 	return (
-		<div className={styles.flowers}>
-			{TEST_DATA.map((flower) => (
-				<Card
-					id={flower.id}
-					name={flower.name}
-					traits={flower.traits}
-					image={flower.image_original_url}
-				/>
-			))}
-		</div>
+		<>
+			<MainCard 
+			img={"https://ipfs.thirdweb.com/ipfs/QmZobrQGTyBgC3eMSyeUDmRQJLKsvtELUgFRXTgSVnZmeE/0.jpg"}
+			name={"Bird"} 
+			ownerImg={""}
+			/>
+			<div className={styles.flowers}>
+				{TEST_DATA.map((flower) => (
+					<Card
+						id={flower.id}
+						name={flower.name}
+						traits={flower.traits}
+						image={flower.image_original_url}
+					/>
+				))}
+			</div>
+		</>
 	)
 }
 
